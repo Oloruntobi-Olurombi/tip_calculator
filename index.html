@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Wonder Tipper</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="app">
+  <div class="calculator">
+   <header>
+    <h1>Wonder Tipper</h1>
+   </header>
+   <main>
+    <section class="options">
+     <div class="input-group">
+      <div class="pre">&#x20A6;</div>
+       <input type="number" class="cost" placeholder="How much was the bill?" />
+     </div>
+
+     <div class="input-group">
+      <select class="service" required>
+       <option disabled selected>How was your service?</option>
+       <option value="30"> 30% Outstanding Service</option>
+       <option value="20"> 20% Good Service</option>
+       <option value="10"> 10% Okay Service</option>
+       <option value="5"> 5% Bad Service</option>
+       <option value="0"> Not Impress No Tip</option>
+      </select>
+     </div>
+     <div class="input-group">
+      <input type="number" class="people" placeholder="How many are sharing the bill?" />
+     </div>
+    </section>
+
+    <section class="tip-wrap">
+     <p>You should tip:</p>
+     <h3 class="tip">&#x20A6;0</h3>
+    </section>
+   </main>
+
+   <footer>
+    <button id="tip-btn">Tip</button>
+   </footer>
+  </div>
+ </div>
+
+ <script src="main.js"></script>
+</body>
+</html>
